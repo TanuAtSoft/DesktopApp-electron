@@ -60,6 +60,15 @@
     "electron-builder": "^23.6.0"
   },
   "build": {
+    "appId":"com.tanu-electron-app",
+    "linux":{
+      "target":[ 
+        "deb",
+        "snap",
+        "rpm"
+    ]
+    },
+    "category":"utility",
     "files": [
       "build/**/*",
       "node_modules/**/*"
