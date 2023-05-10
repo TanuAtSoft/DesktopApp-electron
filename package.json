@@ -2,20 +2,15 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "author": "Tanu",
+  "author": "Tanu <tanuja_gurung@softprodigy.com>",
   "description": "Task app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "concurrently": "^8.0.1",
-    "cross-env": "^7.0.3",
-    "electron-is-dev": "^2.0.0",
-    "electron-reloader": "^1.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "wait-on": "^7.0.1",
     "web-vitals": "^2.1.4"
   },
   "main": "public/electron.js",
@@ -51,6 +46,11 @@
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.1.1",
+    "wait-on": "^7.0.1",
+    "concurrently": "^8.0.1",
+    "cross-env": "^7.0.3",
+    "electron-is-dev": "^2.0.0",
+    "electron-reloader": "^1.2.3",
     "@electron-forge/maker-deb": "^6.1.1",
     "@electron-forge/maker-rpm": "^6.1.1",
     "@electron-forge/maker-squirrel": "^6.1.1",
@@ -68,7 +68,6 @@
         "rpm"
     ]
     },
-    "category":"utility",
     "files": [
       "build/**/*",
       "node_modules/**/*"
