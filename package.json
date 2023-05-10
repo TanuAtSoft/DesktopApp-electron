@@ -23,8 +23,7 @@
     "electron:serve": "concurrently -k \"cross-env BROWSER=none npm start\" \"npm run electron:start\"",
     "electron:build": "yarn build && electron-builder -c.extraMetadata.main=build/main.js",
     "electron:start": "electron .",
-    "package": "electron-builder build --win",
-    "make": "react-scripts build && electron-forge make"
+    "package": "electron-builder build --linux deb tar.xz"
   },
   "eslintConfig": {
     "extends": [
